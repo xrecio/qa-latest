@@ -4,9 +4,9 @@ import org.junit.jupiter.api.Test;
 import java.util.logging.Logger;
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class exercises1 {
+public class exercise1 {
 
-    private final static Logger LOGGER = Logger.getLogger(exercises1.class.getName());
+    private final static Logger LOGGER = Logger.getLogger(exercise1.class.getName());
 
     @Test
     public void occurrencesOfDigitsInArray() {
@@ -16,10 +16,9 @@ public class exercises1 {
         int[] expected = {1,1,2,3,2,2,2,1,0,6};
 
         for(int i=0; i < digits.length; i++) {
-            int j = digits[i];
-            occurrences[j]++;
+            occurrences[digits[i]]++;
         }
-        
+
         for(int i=0; i < occurrences.length; i++) {
             LOGGER.info("Number of "+ i + "'s: "+ occurrences[i]);
         }
